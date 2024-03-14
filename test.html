@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<title>Tags Krowdel</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="style_tags.css" rel="stylesheet" type="text/css">
+<script src="scripTags.js"></script>
+</head>
+
+<body>
+<header></header>
+<main>
+    <section class="container">
+        <h1>Przykłady obsługa tagów: </h1>
+        <div class="content">
+
+            <div class="one">
+                <p>Walidacja textu:</p>
+                <input type=text name="text" value="ukrainski, polski, portugalski">
+            </div>
+        
+            <div class="sec">
+                <p>Walidacja email:</p>
+                <input type=text name=email value="emial@stasze.pl">
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer> Copyright © Krowdel </footer>
+<script defer>
+
+    const configOne = {
+        inputName: "text",
+        separate: ", ",
+        type: "text",
+        limit: 200
+    };
+    const tagsOne = new Tags(configOne, 'pl');
+
+    const configSec = {
+        inputName: "email",
+        separate: "; ",
+        type: "mail",
+        limit: 200
+    };
+    const tagsSec = new Tags(configSec, 'pl');
+
+</script>
+
+</body>
+</html>

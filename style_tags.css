@@ -1,0 +1,53 @@
+.content {
+    width: 100%;
+}
+.areaTags {
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px 5px 3px 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    transition: all .8s;
+}
+.tag:hover {border-color: rgb(0, 174, 255);}
+
+.areaTags input {
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    flex: 1;
+    outline: none;
+}
+.tag span { padding-bottom: 3px; text-transform: uppercase; }
+.tag em { cursor: pointer; padding: 5px 5px 5px 15px; width: 20px;  }
+.tag em:hover svg { fill: red; width: 4px; padding-right: 0; }
+#info {background: red;}
+.field #info { margin: 20px 0 0; }
+.field #info .tagAlert{ color: red;}
+
+.tag em:hover .svg1 {transform: rotate(0deg) translate( 0px); }
+.tag em:hover .svg2 {transform: rotate(0deg) translate( 3px); }
+svg {
+    width: 3px;
+    height: 18px;
+    fill: #aaa;
+    transition: all 0.3s; 
+    padding-right: 2px;
+}
+.tagAlert {
+    display: block;
+    color: red;
+    padding: 10px;
+    background-color: #ffe8e7;
+    margin-top: 3px;
+}
+.svg1 { transform: translate(5px) rotate(45deg); }
+.svg2 { transform: translate(0px) rotate(135deg); }
